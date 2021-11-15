@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Cadastro</title>
+	</head>
+	<body>
+		<form id="form1" name="form1" method="post" action="salvar.php">
+		<h2 allign="center"><strong>Sistema de Cadastro PHP</strong><h2>
+		<table width="390" border="1" align="center">
+			<tr>
+				<td width="50">Nome</td>
+				<td width="500"><input name="nome" type="text" id="nome"></td>
+			</tr>
+			<tr>
+				<td>Sobrenome</td>
+				<td><input name="sobrenome" type="text" id="sobrenome"/></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input name="email" type="text" id="sobrenome"/></td>
+			</tr>
+			<tr>
+				<td>Sexo</td>
+				<td>
+					<input name="sexo" type="radio" value="M" id="sexo" checked="checked"/>Masculino
+					<input name="sexo" type="radio" value="F"/>Feminino
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="enviar" value="gravar"
+				style="cursor:pointer"/>
+			</tr>
+		</table>
+		</form>
+		<br></br>
+		<h4><a href="index.html">Voltar</a></h4>
+	</body>
+</html>
