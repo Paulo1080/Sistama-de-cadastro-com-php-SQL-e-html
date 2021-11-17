@@ -9,7 +9,7 @@
 
 	//Conectar o banco de dados: bdweb
 	mysqli_select_db($conn, "bdweb");
-	$resultado = mysqli_query($conn,"select * from tabela");
+	$resultado = mysqli_query($conn,"select * from tabela order by id_tabela");
 	mysqli_close($conn);
 	
 ?>
@@ -50,7 +50,7 @@
 			<td>$email</td>
 			<td>$sexo</td>
 			<td><a href=\"editar.php?id=$id\">[Editar]</a>
-				<a href=\"excluir.php?id=&id\">[Editar]</a></td>
+				<a href=\"excluir.php?id=$id\">[Excluir]</a></td>
 		</tr>\n";
 	}
 ?>
